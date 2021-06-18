@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Blog do Carlinhos</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../css/styles.css" rel="stylesheet" />
+        <link href="../css/plus.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand text-background" href="index.html">Carlinhos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <%- include('./components/menu.ejs'); %>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url(https://images.unsplash.com/photo-1591233055842-a984961b71af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80)">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+
+                            <h1><%= post.title %></h1>
+                            <h2 class="subheading"><%= post.shortDescription %></h2>
+                            <span class="post-meta">
+                                Por
+                                <a class="pill-green" href="#!"><%= post.author %></a>
+                                em <%= post.postedAt %>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>Depois de um loooooongo periodo off, eis que esse blog resurge das cinzas pra dar algumas dicas do que fazer no Porto!</p>
+                        <p>Muita gente me pede dicas de quantos dias passar lá, quais os melhores lugares para se hospedar, enfim, coisas básicas que queremos saber quando planejamos uma viagem. Pra condensar tudo isso em um lugar só, resolvi publicar 2 emails que sempre enviamos aos amigos/conhecidos/desconhecidos que nos pedem essas dicas.</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti cumque dolor ratione, atque asperiores et est eos optio laudantium debitis voluptatibus quidem reprehenderit, excepturi fugiat provident, possimus dolorum explicabo ducimus!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem dignissimos et nulla sapiente, qui quaerat ratione explicabo natus mollitia, necessitatibus dolor! Error dicta blanditiis unde magni eaque! Non, aperiam.</p>
+                        <h2 class="section-heading">Pelourinho</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit ducimus dolor facere laborum earum cumque ut officia temporibus! Sint unde dolorem libero voluptates aperiam excepturi odit ab quidem repellat ullam.</p>
+                        <blockquote class="blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eveniet hic consequatur maxime magni doloremque sequi, libero dolore atque perferendis labore earum asperiores necessitatibus ipsa itaque quos laudantium ipsum voluptates!</blockquote>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus quod adipisci expedita quisquam nihil animi deleniti, obcaecati maiores autem laudantium modi excepturi qui assumenda at eveniet in repellat officiis magnam!</p>
+                        <h2 class="section-heading">Meninos doirados</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto deserunt, quaerat quas amet animi iusto itaque corporis explicabo recusandae neque, a quam. Exercitationem, commodi veniam aut dolorum harum odio.</p>
+                        <a href="#!"><img class="img-fluid" src="https://images.unsplash.com/photo-1591233055842-a984961b71af?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=625&q=80" alt="..." /></a>
+                        <span class="caption text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci repudiandae voluptas laudantium nulla facilis iste optio veniam, eveniet delectus ut perferendis ipsa pariatur, sed excepturi soluta quam expedita facere? Rerum?</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nostrum eaque illum voluptas. Voluptates, deserunt corrupti? Totam eos ducimus repellendus, modi necessitatibus atque aliquid aperiam obcaecati. Nesciunt beatae harum deserunt.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <%- include('./components/footer.ejs'); %>

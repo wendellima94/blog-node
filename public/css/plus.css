@@ -1,0 +1,47 @@
+.text-background {
+    color: transparent;
+    background-image: url(https://images.unsplash.com/photo-1558470598-a5dda9640f68?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
+    background-size: auto;
+    background-clip: border-box;
+    background-clip: text;
+    background-size: contain;
+}
+
+.background-cover {
+    background-size: cover;
+}
+
+.categories {
+    padding: 2em 0;
+}
+
+.categories-title {
+    text-align: center;
+    padding: 1em;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.box {
+    padding: 1em;
+    border: 1px solid rgb(131, 130, 130);
+    border-right: none;
+    border-bottom-color: #000;
+}
+
+.pill-green {
+    color: white;
+    padding: 0 .2em;
+    border-radius: 25px;
+}
+
+.pill-green:hover {
+    background: #01ad35;
+    color: white;
+}
+
+.subheading {
+    color: #e8ccb9;
+}
