@@ -13,6 +13,7 @@ router.get('/posts/:id', async function(req, res, next) {
   const postId = req.params.id
   const getAllPosts = await Posts.findByPk(postId);
   res.json(getAllPosts);
+  
 });
 
 
