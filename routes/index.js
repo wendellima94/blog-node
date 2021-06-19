@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-// const dbConn = require('../lib/db');
+
 const database = require('../lib/db');
 const Posts = require('../model/posts');
 const copyright = 'Blog do Paulo - 2021';
